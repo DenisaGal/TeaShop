@@ -8,7 +8,7 @@ import { products } from "../products";
   templateUrl: './products-list-user.component.html',
   styleUrls: ['./products-list-user.component.css']
 })
-export class ProductsListUserComponent implements OnInit {
+export class ProductsListUserComponent{
 
   products = products;
 
