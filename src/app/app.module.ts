@@ -8,6 +8,11 @@ import { TopBarComponent } from "./top-bar/top-bar.component";
 import { ProductListComponent } from "./product-list/product-list.component";
 import { HomeComponent } from "./home/home.component";
 import { MakeYourOwnComponent } from "./make-your-own/make-your-own.component";
+import { LogInComponent } from './log-in/log-in.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { HomeUserComponent } from './home-user/home-user.component';
+import { ProductsListUserComponent } from './products-list-user/products-list-user.component';
+import { MakeYourOwnUserComponent } from './make-your-own-user/make-your-own-user.component';
 
 @NgModule({
   imports: [
@@ -16,7 +21,12 @@ import { MakeYourOwnComponent } from "./make-your-own/make-your-own.component";
     RouterModule.forRoot([
       { path: "", component: HomeComponent },
       { path: "products", component: ProductListComponent },
-      { path: "make-your-own", component: MakeYourOwnComponent }
+      { path: "make-your-own", component: MakeYourOwnComponent },
+      { path: "log-in", component: LogInComponent },
+      { path: "sign-in", component: SignInComponent },
+      { path: "home-user", component: HomeUserComponent },
+      { path: "products-user", component: ProductsListUserComponent },
+      { path: "make-your-own-user", component: MakeYourOwnUserComponent }
     ])
   ],
   declarations: [
@@ -24,14 +34,14 @@ import { MakeYourOwnComponent } from "./make-your-own/make-your-own.component";
     TopBarComponent,
     ProductListComponent,
     HomeComponent,
-    MakeYourOwnComponent
+    MakeYourOwnComponent,
+    LogInComponent,
+    SignInComponent,
+    HomeUserComponent,
+    ProductsListUserComponent,
+    MakeYourOwnUserComponent
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
 
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/

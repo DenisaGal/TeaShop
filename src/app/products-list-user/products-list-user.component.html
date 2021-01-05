@@ -1,8 +1,8 @@
 <!-- <link href="https://fonts.googleapis.com/css?family=Pacifico:300,400,500&display=swap" rel="stylesheet"> -->
 
-<a class="button fancy-button" href="">Home</a>
-<a class="button fancy-button" href="./products">Products</a>
-<a class="button fancy-button" href="./make-your-own">Make your own</a>
+<a class="button fancy-button" href="./home-user">Home</a>
+<a class="button fancy-button" href="./products-user">Products</a>
+<a class="button fancy-button" href="./make-your-own-user">Make your own</a>
 
 <h2>Products</h2>
 
@@ -16,4 +16,7 @@
   <p *ngIf="product.description">
     Description: {{ product.description }}
   </p>
+  <button (click)="add()">
+    Add to cart
+  </button>
 </div>
