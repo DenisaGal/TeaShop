@@ -13,6 +13,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { HomeUserComponent } from './home-user/home-user.component';
 import { ProductsListUserComponent } from './products-list-user/products-list-user.component';
 import { MakeYourOwnUserComponent } from './make-your-own-user/make-your-own-user.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   imports: [
@@ -26,7 +27,8 @@ import { MakeYourOwnUserComponent } from './make-your-own-user/make-your-own-use
       { path: "sign-in", component: SignInComponent },
       { path: "home-user", component: HomeUserComponent },
       { path: "products-user", component: ProductsListUserComponent },
-      { path: "make-your-own-user", component: MakeYourOwnUserComponent }
+      { path: "make-your-own-user", component: MakeYourOwnUserComponent },
+      { path: "cart", component: Cartgit adComponent }
     ])
   ],
   declarations: [
@@ -39,7 +41,8 @@ import { MakeYourOwnUserComponent } from './make-your-own-user/make-your-own-use
     SignInComponent,
     HomeUserComponent,
     ProductsListUserComponent,
-    MakeYourOwnUserComponent
+    MakeYourOwnUserComponent,
+    CartComponent
   ],
   bootstrap: [AppComponent]
 })
