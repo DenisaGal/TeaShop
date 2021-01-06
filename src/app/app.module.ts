@@ -28,7 +28,7 @@ import { CartComponent } from './cart/cart.component';
       { path: "home-user", component: HomeUserComponent },
       { path: "products-user", component: ProductsListUserComponent },
       { path: "make-your-own-user", component: MakeYourOwnUserComponent },
-      { path: "cart", component: Cartgit adComponent }
+      { path: "cart", component: CartComponent }
     ])
   ],
   declarations: [
