@@ -2,6 +2,8 @@
 
 <a class="button" href="">Tea Shop</a>
 
-<a class="button fancy-button" href="./log-in">Log in</a>
+<a class="button fancy-button" *ngIf="!getStatus()" href="./log-in">Log in</a>
+
+<button (click)="logout()" class="button fancy-button" *ngIf="getStatus()" >Log out</button>
 
 <a class="button fancy-button" href="./cart">Cart</a>
