@@ -14,9 +14,9 @@ import { HomeUserComponent } from './home-user/home-user.component';
 import { ProductsListUserComponent } from './products-list-user/products-list-user.component';
 import { MakeYourOwnUserComponent } from './make-your-own-user/make-your-own-user.component';
 import { CartComponent } from './cart/cart.component';
-
 import { AngularFireModule } from "@angular/fire";
 import { AngularFireAuthModule } from "@angular/fire/auth";
+import { ForgottenPassComponent } from './forgotten-pass/forgotten-pass.component';
 
 
 @NgModule({
@@ -43,7 +43,8 @@ import { AngularFireAuthModule } from "@angular/fire/auth";
       { path: "home-user", component: HomeUserComponent },
       { path: "products-user", component: ProductsListUserComponent },
       { path: "make-your-own-user", component: MakeYourOwnUserComponent },
-      { path: "cart", component: CartComponent }
+      { path: "cart", component: CartComponent },
+      { path: "forgotten-pass", component: ForgottenPassComponent }
     ])
   ],
   declarations: [
@@ -57,7 +58,8 @@ import { AngularFireAuthModule } from "@angular/fire/auth";
     HomeUserComponent,
     ProductsListUserComponent,
     MakeYourOwnUserComponent,
-    CartComponent
+    CartComponent,
+    ForgottenPassComponent
   ],
   bootstrap: [AppComponent]
 })

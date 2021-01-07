@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from "@angular/fire/auth";
 import { Router } from "@angular/router";
 import { TopBarComponent } from "../top-bar/top-bar.component";
+import { ForgottenPassComponent } from '../forgotten-pass/forgotten-pass.component';
 
 @Component({
   selector: 'app-log-in',
