@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "ocha-d6612"
+  },
+  "targets": {
+    "teashop-c7f1a": {
+      "hosting": {
+        "TeaShop": [
+          "teashop-c7f1a"
+        ]
+      }
+    }
   }
 }
