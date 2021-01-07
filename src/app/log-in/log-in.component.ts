@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from "@angular/fire/auth";
+import { Router } from "@angular/router";
+import { TopBarComponent } from "../top-bar/top-bar.component";
 
 @Component({
   selector: 'app-log-in',
@@ -8,7 +10,7 @@ import { AngularFireAuth } from "@angular/fire/auth";
 })
 export class LogInComponent implements OnInit {
 
-  constructor( private auth: AngularFireAuth) { }
+  constructor( private auth: AngularFireAuth, private router: Router) { }
 
   login(){
 
@@ -17,10 +19,11 @@ export class LogInComponent implements OnInit {
 
       this.auth.signInWithEmailAndPassword(email, password)
         .then((user) => {
-          window.alert("signed in");
+          TopBarComponent.isSignedIn = true;
+          this.router.navigate(['./products']);
         })
         .catch((error) => {
-          window.alert("Smth is wrong");
+          window.alert(error.message);
         });
 
   }
