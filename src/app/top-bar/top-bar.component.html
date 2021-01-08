@@ -1,9 +1,15 @@
 <!-- <link href="https://fonts.googleapis.com/css?family=Pacifico:300,400,500&display=swap" rel="stylesheet"> -->
 
-<a class="button" href="">Tea Shop</a>
+<button id="home_button" (click)="this.router.navigate(['./home-user'])"></button>
 
-<a class="button fancy-button" *ngIf="!getStatus()" href="./log-in">Log in</a>
+<div>
+  <button id="cart_button" (click)="this.router.navigate(['./cart'])"></button>
+
+
+<a  id="login_button" *ngIf="!getStatus()" href="./log-in">Log in</a>
 
 <button (click)="logout()" class="button fancy-button" *ngIf="getStatus()" >Log out</button>
 
-<a class="button fancy-button" href="./cart">Cart</a>
+
+
+</div>
