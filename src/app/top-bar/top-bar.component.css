@@ -6,6 +6,7 @@
 	background-image: url("./logo.png");
 	background-size: cover;
 	margin-right: 20px;
+	background-color: #20602B;
 }
 
 #cart_button{
@@ -15,6 +16,7 @@
 	border: none;
 	background-image: url("./cart.png");
 	background-size: cover;
+	background-color: #20602B;
 }
 
 .login_button{

@@ -1,19 +1,25 @@
 <app-links-bar></app-links-bar>
 
+<div class="content">
 <h2>Products</h2>
 
-<div *ngFor="let product of products_from_firestore | async">
+<div class="product" *ngFor="let product of products_from_firestore | async">
   <h3>
     <a [title]="product.Name">
       {{ product.Name}}
     </a>
   </h3>
-  <p>Price: {{product.Price}} ron</p>
+  <p>Price: {{product.Price}} ron
+  </p>
+    <button *ngIf="getStatus()" (click)="add()">
+      Add to cart
+    </button>
+
   <p *ngIf="product.Description">
     Description: {{ product.Description}}
+
   </p>
-  <p>Quantity: {{product.Quantity}}</p>
-  <button (click)="add()">
-    Add to cart
-  </button>
+  <p style="margin-bottom: 30px;">Quantity: {{product.Quantity}}  </p>
+<hr>
+</div>
 </div>
