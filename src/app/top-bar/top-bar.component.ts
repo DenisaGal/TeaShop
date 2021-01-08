@@ -49,4 +49,11 @@ export class TopBarComponent implements OnInit {
 
   }
 
+  handleCart(){
+    if(TopBarComponent.isSignedIn)
+      this.router.navigate(['./cart'])
+    else
+     window.alert("Log in to use the cart!");
+  }
+
 }
