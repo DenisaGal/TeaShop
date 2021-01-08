@@ -1,7 +1,8 @@
 import { Component } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFirestore } from '@angular/fire/firestore';
 
-import { products } from "../products";
 
 @Component({
   selector: "app-product-list",
@@ -9,7 +10,10 @@ import { products } from "../products";
   styleUrls: ["./product-list.component.css"]
 })
 export class ProductListComponent {
-  products = products;
+
+	constructor(private store: AngularFirestore) {}
+
+	products_from_firestore = this.store.collection('products').valueChanges({idField: 'id'});
 
   add() {
     window.alert("The product has been added to cart!");

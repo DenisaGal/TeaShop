@@ -4,16 +4,17 @@
 
 <h2>Make your own blend</h2>
 
-<div *ngFor="let ingredient of ingredients">
+<div *ngFor="let ingredient of ingredients_from_firestore | async">
   <h3>
-    <a [title]="ingredient.name + ' details'">
-      {{ ingredient.name }}
+    <a [title]="ingredient.Name ">
+      {{ ingredient.Name }}
     </a>
   </h3>
   <p>
-    Price: {{ ingredient.price}}
+    Price: {{ ingredient.Price}} ron
   </p>
-  <p *ngIf="ingredient.description">
-    Description: {{ ingredient.description }}
+  <p *ngIf="ingredient.Description">
+    Description: {{ ingredient.Description }}
   </p>
+  <p>Quantity: {{ingredient.Quantity}}</p>
 </div>
