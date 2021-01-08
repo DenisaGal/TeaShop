@@ -9,9 +9,6 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 import { AppComponent } from "./app.component";
 import { TopBarComponent } from "./top-bar/top-bar.component";
-import { ProductListComponent } from "./product-list/product-list.component";
-import { HomeComponent } from "./home/home.component";
-import { MakeYourOwnComponent } from "./make-your-own/make-your-own.component";
 import { LogInComponent } from './log-in/log-in.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { HomeUserComponent } from './home-user/home-user.component';
@@ -38,13 +35,10 @@ import { LinksBarComponent } from './links-bar/links-bar.component';
                                             }),
         AngularFireAuthModule,
         AngularFirestoreModule,
-    RouterModule.forRoot([
-      { path: "", component: HomeComponent },
-      { path: "products", component: ProductListComponent },
-      { path: "make-your-own", component: MakeYourOwnComponent },
+    RouterModule.forRoot([    
+      { path: "", component: HomeUserComponent },
       { path: "log-in", component: LogInComponent },
       { path: "sign-in", component: SignInComponent },
-      { path: "home-user", component: HomeUserComponent },
       { path: "products-user", component: ProductsListUserComponent },
       { path: "make-your-own-user", component: MakeYourOwnUserComponent },
       { path: "cart", component: CartComponent },
@@ -54,9 +48,6 @@ import { LinksBarComponent } from './links-bar/links-bar.component';
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent,
-    HomeComponent,
-    MakeYourOwnComponent,
     LogInComponent,
     SignInComponent,
     HomeUserComponent,
