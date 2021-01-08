@@ -11,10 +11,7 @@
 body {
   margin: 0;
    height: 100%;
-     background-repeat: no-repeat;
-     background-attachment: fixed;
-     background-size: cover;
-     background-image: url("/app/background.jpg");
+   background-color:#f7f4e9;
 }
 
 .container{
