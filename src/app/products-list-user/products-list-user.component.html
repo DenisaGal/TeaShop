@@ -9,17 +9,17 @@
       {{ product.Name}}
     </a>
   </h3>
-  <p>Price: {{product.Price}} ron
+  <p> <span>Price:</span> {{product.Price}} ron
   </p>
     <button *ngIf="getStatus()" (click)="add()">
       Add to cart
     </button>
 
   <p *ngIf="product.Description">
-    Description: {{ product.Description}}
+    <span> Description: </span> {{ product.Description}}
 
   </p>
-  <p style="margin-bottom: 30px;">Quantity: {{product.Quantity}}  </p>
+  <p style="margin-bottom: 30px;"> <span> Quantity:</span> {{product.Quantity}}  </p>
 <hr>
 </div>
 </div>
