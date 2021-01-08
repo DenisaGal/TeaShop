@@ -12,7 +12,8 @@ export class TopBarComponent implements OnInit {
 
    public static isSignedIn:boolean = false;
 
-  constructor(private auth: AngularFireAuth, private router: Router) { }
+
+  constructor(private auth: AngularFireAuth, public router: Router) { }
 
   ngOnInit() {
   }
@@ -27,7 +28,8 @@ export class TopBarComponent implements OnInit {
   }
 
   getStatus(){
-    return TopBarComponent.isSignedIn;
+     return TopBarComponent.isSignedIn;
+
   }
 
 }
