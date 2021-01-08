@@ -1,12 +1,12 @@
-<div>
+<app-links-bar></app-links-bar>
+
+<div id="content">
 	<h1>Sign in</h1>
 	<div>
-		<h3>Username</h3>
-		<input  type="text" name="username" placeholder="Enter your Username" required>
 		<h3>Email Address</h3>
 		<input id="emailfield" type="text" name="email" placeholder="Enter your Email Address" required>
 		<h3>Password</h3>
-		<input id="pwdfield" type="password" name="password" placeholder="Enter your Password" required>
+		<input id="pwdfield" type="password" name="password" placeholder="Enter your Password" required><br>
     <button (click)="signin()"> Sign in </button><br>
 		<a href="./log-in">You aready have an account?</a><br>
 	</div>
