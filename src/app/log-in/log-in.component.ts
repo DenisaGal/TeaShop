@@ -21,7 +21,7 @@ export class LogInComponent implements OnInit {
       this.auth.signInWithEmailAndPassword(email, password)
         .then((user) => {
           TopBarComponent.isSignedIn = true;
-          this.router.navigate(['./products']);
+          this.router.navigate(['./products-user']);
         })
         .catch((error) => {
           window.alert(error.message);

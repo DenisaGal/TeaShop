@@ -1,8 +1,8 @@
 <app-links-bar></app-links-bar>
-
+<div class="content">
 <h2>Make your own blend</h2>
 
-<div *ngFor="let ingredient of ingredients_from_firestore | async">
+<div  class="product" *ngFor="let ingredient of ingredients_from_firestore | async">
   <h3>
     <a [title]="ingredient.Name">
       {{ ingredient.Name }}
@@ -11,11 +11,14 @@
   <p>
     Price: {{ ingredient.Price}} ron
   </p>
+  <button *ngIf="getStatus()" (click)="add()">
+    Add to cart
+  </button>
+
   <p *ngIf="ingredient.Description">
     Description: {{ ingredient.Description }}
   </p>
-  <p>Quantity: {{ingredient.Quantity}}</p>
-  <button (click)="add()">
-    Add to cart
-  </button>
+  <p style="margin-bottom: 30px;">Quantity: {{ingredient.Quantity}}</p>
+  <hr>
+</div>
 </div>

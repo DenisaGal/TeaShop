@@ -44,7 +44,7 @@ export class TopBarComponent implements OnInit {
     });
   }
 
-  getStatus(){
+   getStatus(){
      return TopBarComponent.isSignedIn;
 
   }
