@@ -4,7 +4,7 @@
 
 
 <div>
-  <button id="cart_button" (click)="this.router.navigate(['./cart'])"></button>
+  <button id="cart_button" (click)="handleCart()"></button>
 
 
   <a  class="login_button" *ngIf="!getStatus()" href="./log-in">Log in</a>

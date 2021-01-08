@@ -32,3 +32,6 @@ input{
    color: #C18A44;
  }
 
+body {
+   background-image: url("/app/background.png");
+}

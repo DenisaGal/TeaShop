@@ -30,3 +30,7 @@ input{
 button{
   margin: 20px;
 }
+
+body {
+   background-image: url("/app/background.png");
+}
