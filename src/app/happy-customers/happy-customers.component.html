@@ -1,0 +1,9 @@
+<app-links-bar></app-links-bar>
+
+
+<h2>Happy customers</h2>
+
+<div *ngIf="getStatus()">
+	<h3>Select a file to share a picture of your experience with our products:</h3>
+	<p><input type="file" (change)="upload($event)" accept=".png,.jpg, .jpeg, .gif" /></p>
+</div>

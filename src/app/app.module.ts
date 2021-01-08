@@ -5,6 +5,7 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { AngularFireModule } from "@angular/fire";
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
 
 
 import { AppComponent } from "./app.component";
@@ -17,6 +18,7 @@ import { MakeYourOwnUserComponent } from './make-your-own-user/make-your-own-use
 import { CartComponent } from './cart/cart.component';
 import { ForgottenPassComponent } from './forgotten-pass/forgotten-pass.component';
 import { LinksBarComponent } from './links-bar/links-bar.component';
+import { HappyCustomersComponent } from './happy-customers/happy-customers.component';
 
 
 @NgModule({
@@ -35,6 +37,7 @@ import { LinksBarComponent } from './links-bar/links-bar.component';
                                             }),
         AngularFireAuthModule,
         AngularFirestoreModule,
+        AngularFireStorageModule,
     RouterModule.forRoot([    
       { path: "", component: HomeUserComponent },
       { path: "log-in", component: LogInComponent },
@@ -42,7 +45,8 @@ import { LinksBarComponent } from './links-bar/links-bar.component';
       { path: "products-user", component: ProductsListUserComponent },
       { path: "make-your-own-user", component: MakeYourOwnUserComponent },
       { path: "cart", component: CartComponent },
-      { path: "forgotten-pass", component: ForgottenPassComponent }
+      { path: "forgotten-pass", component: ForgottenPassComponent },
+      { path: "happy-customers", component: HappyCustomersComponent }
     ])
   ],
   declarations: [
@@ -55,7 +59,8 @@ import { LinksBarComponent } from './links-bar/links-bar.component';
     MakeYourOwnUserComponent,
     CartComponent,
     ForgottenPassComponent,
-    LinksBarComponent
+    LinksBarComponent,
+    HappyCustomersComponent
   ],
   bootstrap: [AppComponent]
 })
