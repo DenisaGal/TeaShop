@@ -6,6 +6,7 @@ import { AngularFireModule } from "@angular/fire";
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 
 
 import { AppComponent } from "./app.component";
@@ -19,6 +20,10 @@ import { CartComponent } from './cart/cart.component';
 import { ForgottenPassComponent } from './forgotten-pass/forgotten-pass.component';
 import { LinksBarComponent } from './links-bar/links-bar.component';
 import { HappyCustomersComponent } from './happy-customers/happy-customers.component';
+import { UploadFormComponent } from './components/upload-form/upload-form.component';
+import { UploadListComponent } from './components/upload-list/upload-list.component';
+import { UploadDetailsComponent } from './components/upload-details/upload-details.component';
+import { TestComponent } from './test/test.component';
 
 
 @NgModule({
@@ -38,6 +43,7 @@ import { HappyCustomersComponent } from './happy-customers/happy-customers.compo
         AngularFireAuthModule,
         AngularFirestoreModule,
         AngularFireStorageModule,
+        AngularFireDatabaseModule,
     RouterModule.forRoot([    
       { path: "", component: HomeUserComponent },
       { path: "log-in", component: LogInComponent },
@@ -46,7 +52,11 @@ import { HappyCustomersComponent } from './happy-customers/happy-customers.compo
       { path: "make-your-own-user", component: MakeYourOwnUserComponent },
       { path: "cart", component: CartComponent },
       { path: "forgotten-pass", component: ForgottenPassComponent },
-      { path: "happy-customers", component: HappyCustomersComponent }
+      { path: "happy-customers", component: HappyCustomersComponent },
+      { path: "upload-form", component: UploadFormComponent },
+      { path: "upload-list", component: UploadListComponent },
+      { path: "upload-details", component: UploadDetailsComponent },
+      { path: "test", component: TestComponent }
     ])
   ],
   declarations: [
@@ -60,7 +70,11 @@ import { HappyCustomersComponent } from './happy-customers/happy-customers.compo
     CartComponent,
     ForgottenPassComponent,
     LinksBarComponent,
-    HappyCustomersComponent
+    HappyCustomersComponent,
+    UploadFormComponent,
+    UploadListComponent,
+    UploadDetailsComponent,
+    TestComponent
   ],
   bootstrap: [AppComponent]
 })
