@@ -6,9 +6,9 @@
   <button id="cart_button" (click)="this.router.navigate(['./cart'])"></button>
 
 
-<a  id="login_button" *ngIf="!getStatus()" href="./log-in">Log in</a>
+<a  class="login_button" *ngIf="!getStatus()" href="./log-in">Log in</a>
 
-<button (click)="logout()" class="button fancy-button" *ngIf="getStatus()" >Log out</button>
+<button (click)="logout()" class="login_button" *ngIf="getStatus()" >Log out</button>
 
 
 
