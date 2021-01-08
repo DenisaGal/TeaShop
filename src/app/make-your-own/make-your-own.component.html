@@ -6,7 +6,7 @@
 
 <div *ngFor="let ingredient of ingredients_from_firestore | async">
   <h3>
-    <a [title]="ingredient.Name">
+    <a [title]="ingredient.Name ">
       {{ ingredient.Name }}
     </a>
   </h3>
