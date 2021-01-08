@@ -1,7 +1,7 @@
 /* Global Styles */
 
 * {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Georgia", Times, serif;
   color: #20602B;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -78,7 +78,7 @@ label {
   display: inline-flex;
   align-items: center;
   padding: 8px 16px;
-  border-radius: 2px;
+  border-radius: 4px;
   font-size: 14px;
   cursor: pointer;
   background-color: #20602B;
