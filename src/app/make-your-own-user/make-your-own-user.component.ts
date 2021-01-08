@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
-
-import { ingredients } from "../ingredients";
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-make-your-own-user',
@@ -10,7 +10,9 @@ import { ingredients } from "../ingredients";
 })
 export class MakeYourOwnUserComponent{
 
-  ingredients = ingredients;
+  constructor(private store: AngularFirestore) {}
+
+  ingredients_from_firestore = this.store.collection('Ingredients').valueChanges({idField: 'id'});
 
   add() {
     window.alert("The ingredient has been added to cart!");

@@ -2,6 +2,10 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { RouterModule } from "@angular/router";
 import { ReactiveFormsModule } from "@angular/forms";
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireAuthModule } from "@angular/fire/auth";
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+
 
 import { AppComponent } from "./app.component";
 import { TopBarComponent } from "./top-bar/top-bar.component";
@@ -14,8 +18,6 @@ import { HomeUserComponent } from './home-user/home-user.component';
 import { ProductsListUserComponent } from './products-list-user/products-list-user.component';
 import { MakeYourOwnUserComponent } from './make-your-own-user/make-your-own-user.component';
 import { CartComponent } from './cart/cart.component';
-import { AngularFireModule } from "@angular/fire";
-import { AngularFireAuthModule } from "@angular/fire/auth";
 import { ForgottenPassComponent } from './forgotten-pass/forgotten-pass.component';
 import { LinksBarComponent } from './links-bar/links-bar.component';
 
@@ -35,6 +37,7 @@ import { LinksBarComponent } from './links-bar/links-bar.component';
                                                 measurementId: "G-7183TBLK6X"
                                             }),
         AngularFireAuthModule,
+        AngularFirestoreModule,
     RouterModule.forRoot([
       { path: "", component: HomeComponent },
       { path: "products", component: ProductListComponent },
