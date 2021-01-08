@@ -17,6 +17,7 @@ import { CartComponent } from './cart/cart.component';
 import { AngularFireModule } from "@angular/fire";
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { ForgottenPassComponent } from './forgotten-pass/forgotten-pass.component';
+import { LinksBarComponent } from './links-bar/links-bar.component';
 
 
 @NgModule({
@@ -59,7 +60,8 @@ import { ForgottenPassComponent } from './forgotten-pass/forgotten-pass.componen
     ProductsListUserComponent,
     MakeYourOwnUserComponent,
     CartComponent,
-    ForgottenPassComponent
+    ForgottenPassComponent,
+    LinksBarComponent
   ],
   bootstrap: [AppComponent]
 })
