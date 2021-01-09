@@ -20,6 +20,7 @@ export class MakeYourOwnUserComponent{
     window.alert("The ingredient has been added to cart!");
     CartComponent.prods.push(prod);
     console.log(CartComponent.prods);
+    CartComponent.total = CartComponent.total + prod.Price;
   }
 
   getStatus(){
