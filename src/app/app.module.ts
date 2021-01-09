@@ -23,11 +23,6 @@ import { HappyCustomersComponent } from './happy-customers/happy-customers.compo
 import { UploadFormComponent } from './components/upload-form/upload-form.component';
 import { UploadListComponent } from './components/upload-list/upload-list.component';
 import { UploadDetailsComponent } from './components/upload-details/upload-details.component';
-import { TestComponent } from './test/test.component';
-import { CartUploadFormComponent } from './components/cart-upload-form/cart-upload-form.component';
-import { CartUploadListComponent } from './components/cart-upload-list/cart-upload-list.component';
-import { CartUploadDetailsComponent } from './components/cart-upload-details/cart-upload-details.component';
-
 
 @NgModule({
   imports: [
@@ -58,11 +53,7 @@ import { CartUploadDetailsComponent } from './components/cart-upload-details/car
       { path: "happy-customers", component: HappyCustomersComponent },
       { path: "upload-form", component: UploadFormComponent },
       { path: "upload-list", component: UploadListComponent },
-      { path: "upload-details", component: UploadDetailsComponent },
-      { path: "test", component: TestComponent },
-      { path: "cart-upload-form", component: CartUploadFormComponent },
-      { path: "cart-upload-list", component: CartUploadListComponent },
-      { path: "cart-upload-details", component: CartUploadDetailsComponent },
+      { path: "upload-details", component: UploadDetailsComponent }
     ])
   ],
   declarations: [
@@ -79,11 +70,7 @@ import { CartUploadDetailsComponent } from './components/cart-upload-details/car
     HappyCustomersComponent,
     UploadFormComponent,
     UploadListComponent,
-    UploadDetailsComponent,
-    TestComponent,
-    CartUploadFormComponent,
-    CartUploadListComponent,
-    CartUploadDetailsComponent
+    UploadDetailsComponent
   ],
   bootstrap: [AppComponent]
 })
