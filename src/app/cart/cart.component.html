@@ -1,19 +1,23 @@
 <app-links-bar></app-links-bar>
-
+<div id="content">
 <h2>Order Details</h2>
 
-<div *ngFor="let product of getProds()">
+<div class="product" *ngFor="let product of getProds()">
   <h3>
     <a [title]="product.Name">
       {{ product.Name }}
     </a>
   </h3>
+  <button id="remove" (click)="remove(product)">Remove</button>
   <p>Price: {{product.Price}}</p>
   <p *ngIf="product.Description">
     Description: {{ product.Description }}
   </p>
-  <button>Remove</button>
+<hr>
 </div>
 
-<p></p>
-<div *ngIf="getTotal()">Total: {{ getTotal() }}</div>
+<p></p><p></p><p></p>
+<h3 id="total" *ngIf="getTotal()">Total price: {{ getTotal() }}</h3>
+</div>
+
+<button id="order" (click)="order()">Complete order</button>

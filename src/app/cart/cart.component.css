@@ -1,1 +1,36 @@
+h2{
+  color: #436F25;
+  font-weight: bold;
+  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
 
+.product{
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+#content{
+  width: 500px;
+  margin-left: 70px;
+}
+
+#remove{
+  float: right;
+}
+
+hr{
+  border-top: 1px solid #76AD00;
+}
+
+#total{
+  text-size: 15px;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+#order{
+  margin: 50px;
+  margin-left: 100px;
+}
