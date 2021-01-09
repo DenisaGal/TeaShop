@@ -22,4 +22,8 @@ export class CartComponent implements OnInit {
    getTotal(){
        return CartComponent.total;
     }
+
+     order(){
+      window.alert('Order placed!');
+    }
 }
