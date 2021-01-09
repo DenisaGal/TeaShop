@@ -3,13 +3,14 @@ h2{
   font-weight: bold;
   margin-left: 65px;
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 h3{
   color: #C18A44;
   font-weight: bold;
   margin-top: 40px;
+  width: 70%;
 }
 
 p{
@@ -26,4 +27,10 @@ div {
 .content{
   width: 500px;
   margin-left: 70px;
+}
+
+.upload_form{
+  margin-bottom: 50px;
+  margin-left: 70px;
+  margin-top: 30px;
 }
