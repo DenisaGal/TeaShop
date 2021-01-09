@@ -33,3 +33,9 @@ p{
 span{
   font-weight: bold;
 }
+
+#picture img{
+  width: 50%;
+  height: auto;
+  border-radius: 4px;
+}
