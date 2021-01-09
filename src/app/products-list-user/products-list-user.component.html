@@ -12,7 +12,7 @@
   <div id="picture" *ngIf="product.url"><img src="{{ product.url }}"/></div>
   <p> <span>Price:</span> {{product.Price}} ron
   </p>
-    <button *ngIf="getStatus()" (click)="add()">
+    <button *ngIf="getStatus()" (click)="add(product)">
       Add to cart
     </button>
 
