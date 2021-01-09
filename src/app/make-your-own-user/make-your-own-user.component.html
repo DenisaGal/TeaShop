@@ -8,6 +8,7 @@
       {{ ingredient.Name }}
     </a>
   </h3>
+  <div *ngIf="ingredient.url"><img src="{{ ingredient.url }}"/></div>
   <p>
    <span> Price:</span> {{ ingredient.Price}} ron
   </p>

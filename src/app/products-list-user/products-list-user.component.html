@@ -9,6 +9,7 @@
       {{ product.Name}}
     </a>
   </h3>
+  <div *ngIf="product.url"><img src="{{ product.url }}"/></div>
   <p> <span>Price:</span> {{product.Price}} ron
   </p>
     <button *ngIf="getStatus()" (click)="add()">
