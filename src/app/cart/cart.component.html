@@ -1,16 +1,18 @@
-<!-- <link href="https://fonts.googleapis.com/css?family=Pacifico:300,400,500&display=swap" rel="stylesheet"> -->
 <app-links-bar></app-links-bar>
 
 <h2>Products</h2>
 
-<div *ngFor="let product of products">
+<div *ngFor="let product of getProds()">
   <h3>
-    <a [title]="product.name + ' details'">
-      {{ product.name }}
+    <a [title]="product.Name">
+      {{ product.Name }}
     </a>
   </h3>
-  <p>Price: {{product.price}}</p>
-  <p *ngIf="product.description">
-    Description: {{ product.description }}
+  <p>Price: {{product.Price}}</p>
+  <p *ngIf="product.Description">
+    Description: {{ product.Description }}
   </p>
+  <button>Remove</button>
 </div>
+
+
