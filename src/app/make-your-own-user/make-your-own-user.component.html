@@ -12,7 +12,7 @@
   <p>
    <span> Price:</span> {{ ingredient.Price}} ron
   </p>
-  <button *ngIf="getStatus()" (click)="add()">
+  <button *ngIf="getStatus()" (click)="add(ingredient)">
     Add to cart
   </button>
 

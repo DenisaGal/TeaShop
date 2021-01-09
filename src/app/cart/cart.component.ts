@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { products } from "../products";
 
 
 @Component({
@@ -8,7 +7,6 @@ import { products } from "../products";
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
-  products = products;
   static prods = []
 
   constructor() { }
@@ -19,5 +17,4 @@ export class CartComponent implements OnInit {
   getProds(){
        return CartComponent.prods;
     }
-
 }
