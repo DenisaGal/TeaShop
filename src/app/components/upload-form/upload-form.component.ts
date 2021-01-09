@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FileUploadService } from 'src/app/services/file-upload.service';
 import { FileUpload } from 'src/app/models/file-upload.model';
 
+import { TopBarComponent } from "../../top-bar/top-bar.component";
+
 @Component({
   selector: 'app-upload-form',
   templateUrl: './upload-form.component.html',
@@ -22,6 +24,8 @@ export class UploadFormComponent implements OnInit {
   }
 
   upload(): void {
+    if(!TopBarComponent.isSignedIn)
+      window.alert("You have to be signed in to upload a file!");
     const file = this.selectedFiles.item(0);
     this.selectedFiles = undefined;
 
