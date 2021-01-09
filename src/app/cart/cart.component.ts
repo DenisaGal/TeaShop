@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
-  static prods = []
+  static prods = [];
+  static total = 0;
 
   constructor() { }
 
@@ -16,5 +17,9 @@ export class CartComponent implements OnInit {
 
   getProds(){
        return CartComponent.prods;
+    }
+
+   getTotal(){
+       return CartComponent.total;
     }
 }

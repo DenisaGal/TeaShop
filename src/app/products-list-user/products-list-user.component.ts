@@ -21,6 +21,7 @@ export class ProductsListUserComponent{
     window.alert("The product has been added to cart!");
     CartComponent.prods.push(prod);
     console.log(CartComponent.prods);
+    CartComponent.total = CartComponent.total + prod.Price;
   }
 
   getStatus(){
