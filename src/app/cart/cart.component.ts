@@ -26,4 +26,12 @@ export class CartComponent implements OnInit {
      order(){
       window.alert('Order placed!');
     }
+
+    remove(prod){
+      const index: number = CartComponent.prods.indexOf(prod);
+          if (index !== -1)
+              CartComponent.prods.splice(index, 1);
+      console.log(CartComponent.prods);
+      CartComponent.total = CartComponent.total - prod.Price;
+    }
 }

@@ -8,7 +8,7 @@
       {{ product.Name }}
     </a>
   </h3>
-  <button id="remove">Remove</button>
+  <button id="remove" (click)="remove(product)">Remove</button>
   <p>Price: {{product.Price}}</p>
   <p *ngIf="product.Description">
     Description: {{ product.Description }}
